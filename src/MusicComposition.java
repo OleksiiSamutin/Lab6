@@ -1,13 +1,14 @@
-public class MusicComposition {
+public class MusicComposition{
     private int lengthInSeconds;
-    protected String genre;
+
     private String composer;
     private String name;
     private int BPM;
+    protected String genre;
+    protected  String subgenre;
 
-    public MusicComposition(int lengthInSeconds, String genre, String composer, String name, int BPM) {
+    public MusicComposition(int lengthInSeconds, String composer, String name, int BPM) {
         this.lengthInSeconds = lengthInSeconds;
-        this.genre = genre;
         this.composer = composer;
         this.name = name;
         this.BPM = BPM;
@@ -16,8 +17,17 @@ public class MusicComposition {
     public int getLengthInSeconds() {
         return lengthInSeconds;
     }
+
+    public String getGenre() {
+        return genre;
+    }
+
+
     @Override
     public String toString(){
         return composer + "-" + name + " " + lengthInSeconds +" с.";
     }
+
+
+
 }

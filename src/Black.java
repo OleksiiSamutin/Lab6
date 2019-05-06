@@ -1,8 +1,8 @@
 public class Black extends  MetalMusic {
-    private String subgenre = "Black";
 
-    public Black(int lengthInSeconds, String genre, String composer, String name, int BPM, String subgenre) {
-        super(lengthInSeconds, genre, composer, name, BPM);
-        this.subgenre = subgenre;
+
+    public Black(int lengthInSeconds, String composer, String name, int BPM) {
+        super(lengthInSeconds, composer, name, BPM);
+        this.subgenre = "Chillout";
     }
 }
